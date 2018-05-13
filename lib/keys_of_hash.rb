@@ -3,20 +3,17 @@ require 'pry'
 class Hash
   def keys_of(*arguments)
 
-    matches = []
-    args = []
-
-    arguments.each do |x|
-      args << x
+    
+    args=arguments.map do |element|
+      args << element
     end
 
-    self.each do |key, value|
+    matches = self.each do |key, value|
       args.each do |y|
         if value == y
-          matches << key
+          key
         end
       end
     end
-  matches
   end
 end
