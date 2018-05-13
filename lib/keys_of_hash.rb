@@ -11,7 +11,6 @@ class Hash
     matches = []
     # for every hash
     self.each do |key, value|
-      binding.pry
       args.each do |y|
         if value == y
            matches << key
