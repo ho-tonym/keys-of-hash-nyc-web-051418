@@ -11,11 +11,12 @@ class Hash
     matches = []
     # for every hash
     self.map do |key, value|
-      args.each do |y|
+      args.map do |y|
         if value == y
-           key
+           matches << key
         end
       end
     end
+  return matches
   end
 end
