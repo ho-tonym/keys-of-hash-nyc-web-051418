@@ -5,13 +5,13 @@ class Hash
 
 
     args=arguments.map do |element|
-      args << element
+      element
     end
 
-    matches = self.map do |key, value|
+    matches = self.each do |key, value|
       args.map do |y|
         if value == y
-          return key
+          key
         end
       end
     end
