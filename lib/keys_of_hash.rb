@@ -11,7 +11,7 @@ class Hash
     matches = self.map do |key, value|
       args.map do |y|
         if value == y
-          key
+          return key
         end
       end
     end
