@@ -11,7 +11,7 @@ class Hash
     matches = []
     # for every hash
     self.map do |key, value|
-      args.map do |y|
+      args.each do |y|
         if value == y
            key
         end
