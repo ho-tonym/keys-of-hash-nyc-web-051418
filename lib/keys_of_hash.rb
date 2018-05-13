@@ -9,7 +9,7 @@ class Hash
     end
 
     matches = []
-
+    # for every hash
     self.each do |key, value|
       binding.pry
       args.each do |y|
