@@ -4,10 +4,9 @@ class Hash
   def keys_of(*arguments)
 
     matches = []
-    args = []
 
-    arguments.each do |x|
-      args << x
+    args = arguments.map do |x|
+       x
     end
 
     self.each do |key, value|
