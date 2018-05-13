@@ -8,7 +8,7 @@ class Hash
       args << element
     end
 
-    matches = self.each do |key, value|
+    matches = self.map do |key, value|
       args.map do |y|
         if value == y
           key
